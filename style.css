@@ -96,7 +96,7 @@
     }
 }
 
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
     #header {
         width: 60%;
     }
@@ -112,6 +112,30 @@
 
     #links {
         width: 60%;
+    }
+
+    #tg-ico{
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 425px) {
+    #header {
+        width: 80%;
+    }
+    
+    #info {
+        width: 80%;
+    }
+
+    #text {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #links {
+        width: 80%;
     }
 
     #tg-ico{
