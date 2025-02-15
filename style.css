@@ -1,0 +1,121 @@
+.body, html {
+    margin: 0px;
+    background-color: #030c0c;
+}
+
+#header {
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width: 31.5%;
+    border-radius: 12px;
+    background-color: #1d1e1e;
+    color: white;
+}
+
+#info {
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width: 31.5%;
+    border-radius: 12px;
+    background-color: #1d1e1e;
+    color: white;
+}
+
+#links {
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width: 31.5%;
+    border-radius: 12px;
+    color: white;
+}
+
+#text {
+    padding: 4%;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#link_tg {
+    font-size: 1.2em;
+}
+
+#link_tg_div {
+    background-color: #1f9bda;
+    border-radius: 6px;
+    color: white;
+    padding: 2%;
+    width: 100%;
+    border: #1d1e1e solid 1px;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#link_tg_div:hover {
+    transform: translateY(-7px);
+}
+
+#link_tg_div span {
+    flex-grow: 1;  
+    text-align: center;
+}
+
+#tg-ico{
+    width: 48px;
+    height: 48px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #header {
+        width: 60%;
+    }
+    
+    #info {
+        width: 60%;
+    }
+
+    #text {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #links {
+        width: 60%;
+    }
+
+    #tg-ico{
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    #header {
+        width: 60%;
+    }
+    
+    #info {
+        width: 60%;
+    }
+
+    #text {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #links {
+        width: 60%;
+    }
+
+    #tg-ico{
+        width: 28px;
+        height: 28px;
+    }
+}
