@@ -45,20 +45,51 @@
                     <span class="window-title">Проекты.py</span>
                 </div>
 
-        <div id="info" style="display: flex; flex-direction: column;">
-            <span class="text" id="first"><b>Привет! Я Ларген — Python-разработчик и frontend-энтузиаст</b></span>
-            <span class="text">У меня 3 года опыта в разработке на Python и год во frontend (HTML/CSS/JavaScript).</span>
-            <span class="text">Я самоучка, но это не мешает мне создавать:</span>
-            <ul class="task-list">
-                <li><strong>Desktop-приложения (GUI - PyQt5)</strong></li>
-                <li><strong>Ботов для Telegram/Discord (PyTeleBot / Disnake)</strong></li>
-                <li><strong>Работа с БД  (PostgreSQL)</strong></li>
-                <li><strong>Лендинги и небольшие веб-проекты</strong></li>
-            </ul>
-            <span class="text">Сейчас я активно углубляю знания и планирую поступать в ВУЗ для профессионального роста. Если хотите что-то заказать — пишите!</span>
+                <div class="project-content">
+                    <a href="https://github.com/Largogus/TimeLock" target="_blank" class="project-card">
+                        <div class="project-icon-box">
+                            <img src="src/timelock.webp" alt="TimeLock">
+                        </div>
+                        <div class="project-info">
+                            <h3>TimeLock</h3>
+                            <p>Desktop-приложение для Windows, для отслеживания времени за ПК и ограничений его работы, Пожалуйста учтите, что оно открывается в трее</p>
+                        </div>
+                    </a>
+                    
+                    <div id="two-proj">
+                        <a href="https://github.com/Largogus/YP-Downloader" target="_blank" class="project-card">
+                            <div class="project-icon-box">
+                                <img src="src/yp-downloader.webp" alt="TimeLock">
+                            </div>
+                            <div class="project-info">
+                                <h3>YP Downloader</h3>
+                                <p>Web-приложение, для скачивания видео из Youtube и Pinterest</p>
+                            </div>
+                        </a>
 
-            <a style="margin-top: -2%; padding: 4%; color: wheat;" href="https://drive.google.com/drive/folders/1ZqUxTdyrrHWQxCZNW3JmqblYFzBSI3nf?usp=sharing">Некоторые мои дипломы</a>
-        </div>
+                        <a href="https://github.com/Largogus/pdf-viewer" target="_blank" class="project-card">
+                            <div class="project-icon-box">
+                                <img src="src/pdw-viever.webp" alt="Проект 2">
+                            </div>
+                            <div class="project-info">
+                                <h3>PDF-Viewer</h3>
+                                <p>Desktop-приложение для Windows, для просмотра PDF-файлов, экспорта страниц в фотографии</p>
+                            </div>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="gallery-block">
+
+                <div class="header gallery">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="window-title">Дипломы.png</span>
+                </div>
 
                 <div class="gallery-content">
                     <div class="monitor-screen swiper" id="diploma-slider" aria-label="Галерея дипломов">
@@ -138,10 +169,7 @@
         </div>
     </div>
 
-    <script>
-        var button = document.getElementById('link_tg_div').addEventListener('click', function() {
-            window.location.href = 'https://t.me/LargenExe';
-        })
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
