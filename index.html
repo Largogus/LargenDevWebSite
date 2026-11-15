@@ -2,46 +2,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Largen</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Львов Алексей | Python-разработчик</title>
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="icon", href="avatar.png">
 </head>
 <body>
-    <div id="main" style="display: flex; flex-direction: column;">
-        <div id="header" style="display: flex; flex-direction: column; margin-top: 4%;">
-            <div>
-                <img src="avatar.png" alt="Largen Avatar" style="width: 120px; clip-path: circle(40%);">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <main class="main-container">
+        <section class="profile-section">
+            <div class="terminal-block">
+                <div class="header terminal">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="window-title">Я.txt</span>
+                </div>
+                <div class="terminal-content">
+                    <div class="avatar-wrapper">
+                        <img src="src/avatar.webp" alt="Львов Алексей" class="profile-avatar">
+                    </div>
+                    
+                    <div class="terminal-text">
+                        <h1>&gt; Львов Алексей</h1>
+                        <p class="subtitle">Python-разработчик</p>
+                        <p class="experience">&gt; Опыт работы: 3 года в Python</p>
+                        <p class="stack">&gt; Стек: Python, PySide6, PostgreSQL, Aiogram, Disnake</p>
+                    </div>
+                </div>
             </div>
-            <p style="font-size: 1.5em; margin-top: 0; padding: 1%;">Largen</p>
-        </div>
+        </section>
 
-        <div id="info" style="display: flex; flex-direction: column;">
-            <span class="text" id="first"><b>Привет! Я Ларген — Python-разработчик и frontend-энтузиаст</b></span>
-            <span class="text">У меня 3 года опыта в разработке на Python и год во frontend (HTML/CSS/JavaScript).</span>
-            <span class="text">Я самоучка, но это не мешает мне создавать:</span>
-            <ul class="task-list">
-                <li><strong>Desktop-приложения (GUI - PyQt5)</strong></li>
-                <li><strong>Ботов для Telegram/Discord (PyTeleBot / Disnake)</strong></li>
-                <li><strong>Работа с БД  (PostgreSQL)</strong></li>
-                <li><strong>Лендинги и небольшие веб-проекты</strong></li>
-            </ul>
-            <span class="text">Сейчас я активно углубляю знания и планирую поступать в ВУЗ для профессионального роста. Если хотите что-то заказать — пишите!</span>
+        <section class="projects-section">
+            <div class="project-block">
+                <div class="header project">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="window-title">Проекты.py</span>
+                </div>
 
-            <a style="margin-top: -2%; padding: 4%; color: wheat;" href="https://drive.google.com/drive/folders/1ZqUxTdyrrHWQxCZNW3JmqblYFzBSI3nf?usp=sharing">Некоторые мои дипломы</a>
-        </div>
+                <div class="project-content">
+                    <a href="https://github.com/Largogus/TimeLock" target="_blank" class="project-card">
+                        <div class="project-icon-box">
+                            <img src="src/timelock.webp" alt="TimeLock">
+                        </div>
+                        <div class="project-info">
+                            <h3>TimeLock</h3>
+                            <p>Desktop-приложение для Windows, для отслеживания времени за ПК и ограничений его работы, Пожалуйста учтите, что оно открывается в трее</p>
+                        </div>
+                    </a>
+                    
+                    <div id="two-proj">
+                        <a href="https://github.com/Largogus/YP-Downloader" target="_blank" class="project-card">
+                            <div class="project-icon-box">
+                                <img src="src/yp-downloader.webp" alt="TimeLock">
+                            </div>
+                            <div class="project-info">
+                                <h3>YP Downloader</h3>
+                                <p>Web-приложение, для скачивания видео из Youtube и Pinterest</p>
+                            </div>
+                        </a>
 
-        <div id="links">
-            <button id="link_tg_div">
-                <img id="tg-ico" src="https://img.icons8.com/color/48/telegram-app--v1.png" alt="telegram-app--v1"/>
-                <span id="link_tg">Telegram</span>
-            </button>
+                        <a href="https://github.com/Largogus/pdf-viewer" target="_blank" class="project-card">
+                            <div class="project-icon-box">
+                                <img src="src/pdw-viever.webp" alt="Проект 2">
+                            </div>
+                            <div class="project-info">
+                                <h3>PDF-Viewer</h3>
+                                <p>Desktop-приложение для Windows, для просмотра PDF-файлов, экспорта страниц в фотографии</p>
+                            </div>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="gallery-block">
+
+                <div class="header gallery">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="window-title">Дипломы.png</span>
+                </div>
+
+                <div class="gallery-content">
+                    <div class="monitor-screen swiper" id="diploma-slider" aria-label="Галерея дипломов">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="src/rebotica1.webp" alt="Диплом 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="src/rebotica2.webp" alt="Диплом 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="src/rebotica3.webp" alt="Диплом 3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="src/rebotica4.webp" alt="Диплом 4">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="src/linux.webp" alt="Терминал Linux. Работа в командной строке">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="src/iskra.webp" alt="Диплом 3 место ISKRA-FT">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="src/PROD_2025.webp" alt="PROD призёр 2025">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <div class="download-container">
+                        <a href="https://disk.yandex.ru/d/w0q6O_skUSTWTQ" download class="download-btn">
+                            Скачать оригиналы
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="contacts-footer">
+            <div class="buttons-row">
+                <a href="https://t.me/LargenDev" target="_blank" class="circle-btn tg-btn" title="Написать в Telegram">
+                    <span>ТГ</span>
+                </a>
+                
+                <div class="mail-wrapper">
+                    <button class="circle-btn mail-btn" data-email="largen.developer@gmail.com" title="Скопировать Email">
+                        <span>Почта</span>
+                    </button>
+
+                    <div class="mail-toast">Скопировано!</div>
+                </div>
+            </div>
+
+            <div class="copyright-text">
+                &copy; <script>document.write(new Date().getFullYear());</script> Львов Алексей. All rights reserved.
+            </div>
+        </footer>
+
+    </main>
+
+    <div id="dialog" class="modal">
+        <span class="dialog-close">&times;</span>
+        <div class="dialog-window">
+            <div class="header dialog">
+                <span class="dot red modal-close-dot"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="window-title">Увеличенный диплом.exe</span>
+            </div>
+            <div class="dialog-body">
+                <img id="modal-img" src="" alt="Увеличенный диплом">
+            </div>
         </div>
     </div>
 
-    <script>
-        var button = document.getElementById('link_tg_div').addEventListener('click', function() {
-            window.location.href = 'https://t.me/LargenExe';
-        })
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
